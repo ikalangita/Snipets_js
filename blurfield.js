@@ -1,5 +1,5 @@
 function blurField( el ){
-			el.each(function () {
+	el.each(function () {
 			    // store default value
 			    var v = this.value;
 
@@ -11,6 +11,7 @@ function blurField( el ){
 			        this.value = "";
 			    }); 
 			});
-		}
-		
-		blurField( $('input, textarea, select').not(':input[type=button], :input[type=submit], :input[type=reset]') );
+}
+
+// === Appel de la fonction 
+blurField( $('input, textarea, select').not(':input[type=button], :input[type=submit], :input[type=reset]') );
